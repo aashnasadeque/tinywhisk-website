@@ -17,11 +17,12 @@
       <a href="#" class="nav-logo">Tiny Whisk Co.</a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="#process">Process</a></li>
         <li><a href="#inquire" class="nav-cta">Inquire</a></li>
       </ul>
-      <button class="nav-hamburger" aria-label="Open menu">
+<button class="nav-hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -29,7 +30,8 @@
     <div class="nav-mobile">
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
         <li><a href="#process">Process</a></li>
         <li><a href="#inquire">Inquire</a></li>
       </ul>
@@ -39,16 +41,16 @@
   <!-- HERO -->
   <section id="hero">
     <div class="hero-media">
-      <img
-        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=1800&q=85&fit=crop"
-        alt="Elegant custom cake"
+<img
+        src="images/cake3.jpg"
+        alt="Elegant custom cake by Tiny Whisk Co."
         class="hero-img"
       />
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
       <p class="hero-eyebrow">Custom Cakes · Victoria, BC</p>
-      <h1 class="hero-title">Every cake<br /><em>tells a story.</em></h1>
+      <h1 class="hero-title">Cakes worth<br /><em>celebrating.</em></h1>
       <p class="hero-sub">Handcrafted, one-of-a-kind cakes designed around your vision.</p>
       <a href="#inquire" class="btn btn-light">Begin Your Inquiry</a>
     </div>
@@ -62,22 +64,21 @@
     <div class="about-inner">
       <div class="about-image-wrap">
         <img
-          src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=900&q=85&fit=crop"
-          alt="Detail of a handcrafted cake"
+          src="images/cake-about.jpg"
+          alt="Custom cake by Tiny Whisk Co."
         />
       </div>
       <div class="about-text">
-        <span class="label">The Baker</span>
-        <h2>Made with intention,<br />finished with care.</h2>
+        <span class="label">Our Story</span>
+        <h2>A balance of flavour<br /><em>and artistry.</em></h2>
         <p>
-          Hi, I'm the baker behind Tiny Whisk Co. Based in Victoria, BC, I create
-          bespoke cakes that are as beautiful as they are delicious. Each cake is
-          designed from scratch — no templates, no shortcuts — just thoughtful
-          craftsmanship tailored to you.
+          At Tiny Whisk Co., we believe a great cake should be two things: stunning to look at and even better to eat. Each cake is crafted with intention, fun, fresh, and uniquely flavorful, designed to make every moment a little sweeter.
         </p>
         <p>
-          Whether it's a wedding, a milestone birthday, or an intimate celebration,
-          I pour the same level of care into every single cake that leaves my kitchen.
+          Cakes don't have to look boring to taste amazing. Using both traditional and abstract decorating techniques, we bring your vision to life with colour, flair, and flavour in equal measure.
+        </p>
+        <p>
+          Whether you come to us with a super specific concept or hand over the creative reins entirely, every cake we make is customised from scratch because your celebration deserves nothing less.
         </p>
         <a href="https://www.instagram.com/tinywhiskco" target="_blank" rel="noopener" class="btn btn-outline">
           See More on Instagram
@@ -94,28 +95,66 @@
     </div>
     <div class="gallery-grid">
       <div class="gallery-item tall">
-        <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=700&q=85&fit=crop" alt="Floral cake" />
+        <img src="images/cake1.png" alt="Custom cake by Tiny Whisk Co." />
       </div>
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=700&q=85&fit=crop" alt="Elegant cake" />
-      </div>
-      <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?w=700&q=85&fit=crop" alt="Wedding cake" />
+        <img src="images/cake11.png" alt="Custom cake by Tiny Whisk Co." />
       </div>
       <div class="gallery-item tall">
-        <img src="https://images.unsplash.com/photo-1586788680434-30d324b2d46f?w=700&q=85&fit=crop" alt="Custom cake detail" />
+        <img src="images/cake16.jpg" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item tall">
+        <img src="images/cake-about.jpg" alt="Custom cake by Tiny Whisk Co." />
       </div>
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=700&q=85&fit=crop" alt="Celebration cake" />
+        <img src="images/cake17.png" alt="Custom cake by Tiny Whisk Co." style="object-position: center 70%;" />
       </div>
       <div class="gallery-item">
-        <img src="https://images.unsplash.com/photo-1612809079591-3b4b96d59696?w=700&q=85&fit=crop" alt="Layered cake" />
+        <img src="images/cake12.png" alt="Custom cake by Tiny Whisk Co." style="object-position: center 85%;" />
       </div>
     </div>
+    <!-- Lightbox -->
+    <div id="lightbox" hidden>
+      <button class="lb-close" aria-label="Close">&times;</button>
+      <button class="lb-prev" aria-label="Previous">&#8592;</button>
+      <button class="lb-next" aria-label="Next">&#8594;</button>
+      <div class="lb-img-wrap">
+        <img id="lb-img" src="" alt="" />
+      </div>
+    </div>
+
     <div class="gallery-footer">
-      <a href="https://www.instagram.com/tinywhiskco" target="_blank" rel="noopener" class="btn btn-outline">
-        View Full Portfolio on Instagram
+      <a href="gallery.html" class="btn btn-outline">
+        View Full Gallery
       </a>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="testimonials-inner">
+      <div class="section-header">
+        <span class="label">Kind Words</span>
+        <h2>Happy clients.</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <p class="testimonial-text">"Incredible cake. Aashna made exactly what I asked for. Would recommend her to anyone for all your cake needs!"</p>
+          <p class="testimonial-author">— Ashley</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Great to work with. She will go out of her way to get the results you are looking for. The cake is made with love — will definitely be using her in the future."</p>
+          <p class="testimonial-author">— Paula</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"I am so impressed with the cake I ordered, it looks exactly like what I wanted. Thank you so much!"</p>
+          <p class="testimonial-author">— Sophia</p>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"It was perfect, thank you so so much."</p>
+          <p class="testimonial-author">— Amelie</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -160,66 +199,10 @@
           @tinywhiskco
         </a>
       </div>
-      <form id="inquiry-form" class="inquire-form" novalidate>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Full Name <span>*</span></label>
-            <input type="text" id="name" name="name" required placeholder="Your name" />
-          </div>
-          <div class="form-group">
-            <label for="email">Email <span>*</span></label>
-            <input type="email" id="email" name="email" required placeholder="your@email.com" />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="event-type">Event Type <span>*</span></label>
-            <select id="event-type" name="event-type" required>
-              <option value="" disabled selected>Select an option</option>
-              <option>Wedding</option>
-              <option>Birthday</option>
-              <option>Baby Shower</option>
-              <option>Anniversary</option>
-              <option>Corporate Event</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="event-date">Event Date <span>*</span></label>
-            <input type="date" id="event-date" name="event-date" required />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="servings">Approx. Number of Guests</label>
-            <input type="number" id="servings" name="servings" placeholder="e.g. 50" min="1" />
-          </div>
-          <div class="form-group">
-            <label for="budget">Budget Range</label>
-            <select id="budget" name="budget">
-              <option value="" disabled selected>Select a range</option>
-              <option>$150 – $300</option>
-              <option>$300 – $500</option>
-              <option>$500 – $800</option>
-              <option>$800+</option>
-              <option>Not sure yet</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-group">
-          <label for="vision">Your Vision <span>*</span></label>
-          <textarea id="vision" name="vision" required placeholder="Tell me about your dream cake — colours, themes, flavours, inspiration images, anything that comes to mind." rows="5"></textarea>
-        </div>
-        <div class="form-group">
-          <label for="referral">How did you hear about me?</label>
-          <input type="text" id="referral" name="referral" placeholder="Instagram, word of mouth, etc." />
-        </div>
-        <button type="submit" class="btn btn-dark btn-full">Send Inquiry</button>
-        <div id="form-success" class="form-success" hidden>
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
-          Thank you! I'll be in touch within 48 hours.
-        </div>
-      </form>
+      <div class="inquire-cta">
+        <p>Fill out the inquiry form to get started. I'll be in touch within 48 hours.</p>
+        <a href="https://forms.gle/R8M9uXKpsNphLvvo7" target="_blank" rel="noopener" class="btn btn-dark">Start Your Inquiry</a>
+      </div>
     </div>
   </section>
 

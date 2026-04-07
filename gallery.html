@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Tiny Whisk Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav" class="scrolled">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Tiny Whisk Co.</a>
+      <ul class="nav-links">
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html" class="nav-active">Gallery</a></li>
+        <li><a href="index.html#process">Process</a></li>
+        <li><a href="index.html#inquire" class="nav-cta">Inquire</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile">
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html#process">Process</a></li>
+        <li><a href="index.html#inquire">Inquire</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- GALLERY HERO -->
+  <section class="menu-hero">
+    <div class="menu-hero-content">
+      <h1>Birthdays, graduations,<br />anniversaries, or just because…</h1>
+      <p>A collection of custom special event cakes.</p>
+    </div>
+  </section>
+
+  <!-- FULL GALLERY -->
+  <section id="gallery" style="padding: 2rem 3rem 7rem; background: var(--bark);">
+    <div class="gallery-grid">
+      <div class="gallery-item tall">
+        <img src="images/cake1.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item">
+        <img src="images/cake11.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item tall">
+        <img src="images/cake16.jpg" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item tall">
+        <img src="images/cake-about.jpg" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item">
+        <img src="images/cake17.png" alt="Custom cake by Tiny Whisk Co." style="object-position: center 70%;" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/cake12.png" alt="Custom cake by Tiny Whisk Co." style="object-position: center 85%;" />
+      </div>
+      <div class="gallery-item tall">
+        <img src="images/cake18.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item">
+        <img src="images/cake15.png" alt="Custom cake by Tiny Whisk Co." style="object-position: center 75%;" />
+      </div>
+      <div class="gallery-item tall">
+        <img src="images/cake10.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item tall">
+        <img src="images/cake13.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item">
+        <img src="images/cake20.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item">
+        <img src="images/cake19.png" alt="Custom cake by Tiny Whisk Co." style="object-position: center 80%;" />
+      </div>
+      <div class="gallery-item tall">
+        <img src="images/cake22.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item">
+        <img src="images/cake23.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item tall">
+        <img src="images/cake28.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item tall">
+        <img src="images/cake25.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item">
+        <img src="images/cake26.png" alt="Custom cake by Tiny Whisk Co." style="object-position: center top;" />
+      </div>
+      <div class="gallery-item">
+        <img src="images/cake33.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item tall">
+        <img src="images/cake24.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item">
+        <img src="images/cake29.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item tall">
+        <img src="images/cake30.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item tall">
+        <img src="images/cake31.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item">
+        <img src="images/cake32.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+      <div class="gallery-item">
+        <img src="images/cake27.png" alt="Custom cake by Tiny Whisk Co." />
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" hidden>
+      <button class="lb-close" aria-label="Close">&times;</button>
+      <button class="lb-prev" aria-label="Previous">&#8592;</button>
+      <button class="lb-next" aria-label="Next">&#8594;</button>
+      <div class="lb-img-wrap">
+        <img id="lb-img" src="" alt="" />
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p class="footer-logo">Tiny Whisk Co.</p>
+      <p class="footer-location">Victoria, BC &nbsp;·&nbsp; Custom Cakes</p>
+      <a href="https://www.instagram.com/tinywhiskco" target="_blank" rel="noopener" class="footer-ig" aria-label="Instagram">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <p class="footer-copy">&copy; 2026 Tiny Whisk Co. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

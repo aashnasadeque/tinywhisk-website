@@ -46,6 +46,59 @@ const observer = new IntersectionObserver(entries => {
 
 fadeEls.forEach(el => observer.observe(el));
 
+// --- Lightbox ---
+const lightbox = document.getElementById('lightbox');
+const lbImg    = document.getElementById('lb-img');
+const lbPrev   = document.querySelector('.lb-prev');
+const lbNext   = document.querySelector('.lb-next');
+const lbClose  = document.querySelector('.lb-close');
+
+const galleryImgs = Array.from(document.querySelectorAll('.gallery-item img'));
+let currentIndex = 0;
+
+function openLightbox(index) {
+  currentIndex = index;
+  lbImg.src = galleryImgs[index].src;
+  lbImg.alt = galleryImgs[index].alt;
+  lightbox.hidden = false;
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.hidden = true;
+  document.body.style.overflow = '';
+}
+
+function showPrev() {
+  currentIndex = (currentIndex - 1 + galleryImgs.length) % galleryImgs.length;
+  lbImg.src = galleryImgs[currentIndex].src;
+}
+
+function showNext() {
+  currentIndex = (currentIndex + 1) % galleryImgs.length;
+  lbImg.src = galleryImgs[currentIndex].src;
+}
+
+galleryImgs.forEach((img, i) => {
+  img.style.cursor = 'pointer';
+  img.addEventListener('click', () => openLightbox(i));
+});
+
+lbClose.addEventListener('click', closeLightbox);
+lbPrev.addEventListener('click', showPrev);
+lbNext.addEventListener('click', showNext);
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+
+document.addEventListener('keydown', (e) => {
+  if (lightbox.hidden) return;
+  if (e.key === 'ArrowLeft')  showPrev();
+  if (e.key === 'ArrowRight') showNext();
+  if (e.key === 'Escape')     closeLightbox();
+});
+
 // --- Inquiry form ---
 const form = document.getElementById('inquiry-form');
 const successMsg = document.getElementById('form-success');
