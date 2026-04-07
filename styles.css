@@ -879,7 +879,7 @@ footer {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
-  .about-image-wrap { aspect-ratio: 4 / 3; }
+  .about-image-wrap { aspect-ratio: 3 / 4; }
 
   #gallery { padding: 5rem 2rem; }
   .gallery-grid {
